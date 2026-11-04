@@ -26,8 +26,8 @@ B.Tech in Information Technology (M. Kumarasamy College of Engineering, 2025). I
 ### [OmniDesk](https://github.com/Naveenkumar75/omnidesk) · Go · PostgreSQL · Docker
 [![CI](https://github.com/Naveenkumar75/omnidesk/actions/workflows/ci.yml/badge.svg)](https://github.com/Naveenkumar75/omnidesk/actions/workflows/ci.yml)
 
-Multi-tenant customer-support backend. Transactional tenant signup, bcrypt password hashing, JWT auth carrying tenant and role, Dockerized PostgreSQL, unit and integration tests with CI.
-**Next:** ticket state machine, then a RAG-based answer-suggestion service (pgvector) and an MCP server.
+Multi-tenant customer-support backend. Transactional tenant signup, bcrypt + JWT auth, a ticket state machine with an audit trail, tenant-isolated queries, Dockerized PostgreSQL, and unit + integration tests with CI.
+**Next:** async SLA workers, then a RAG-based answer-suggestion service (pgvector) and an MCP server.
 
 ## Focus areas
 
