@@ -1,24 +1,48 @@
-## Naveenkumar K
+# Hi, I'm Naveenkumar 👋
 
-Software Engineer at Cognizant. I build backend services in Go, Java and Python, and applied AI features (retrieval, evaluation and tool use through MCP) on top of them.
+**Software Engineer at Cognizant · Backend & Full-Stack · Growing into AI Engineering**
 
-I care about the parts that make software trustworthy: data isolation, transactions, concurrency, tests that run against a real database, and documentation that states its limits.
+B.Tech in Information Technology (M. Kumarasamy College of Engineering, 2025). I build backend services and full-stack applications in Java, Python, Go and Angular, and I'm specializing in applied AI: LLM applications, RAG, agents and MCP.
 
 [Portfolio](https://naveenkumar75.github.io) · [LinkedIn](https://www.linkedin.com/in/naveenkumar-k-986559239)
 
 ---
 
-### [OmniDesk](https://github.com/Naveenkumar75/omnidesk)
-**Multi-tenant customer-support backend** · Go · PostgreSQL · pgvector · FastAPI · MCP
+## Tech stack
 
-- Tenant isolation enforced in two layers: every query is scoped by the tenant in the JWT, and composite foreign keys make the database reject cross-tenant references.
-- Ticket state machine with row locks and an audit trail; admin and agent roles; rate-limited login that doesn't leak which accounts exist.
-- SLA worker built on `FOR UPDATE SKIP LOCKED`, safe to run on several replicas, with a concurrency test proving each breach is recorded exactly once.
-- A RAG service that suggests replies from a tenant's knowledge base, a retrieval evaluation that gates CI, and an MCP server that acts with the caller's own permissions.
-- Versioned migrations, structured logging, an OpenAPI spec kept in sync with the router by a test, and CI running the Go and Python suites against PostgreSQL.
+| Area | Tools |
+|---|---|
+| Languages | Java, Python, Go, JavaScript, TypeScript |
+| Frontend | Angular 17+, HTML, CSS |
+| Backend | Spring Boot, FastAPI, Django, REST APIs |
+| Databases | PostgreSQL, MySQL, SQLite |
+| Data processing | Pandas, NumPy, OpenPyXL, Apache POI |
+| AI / GenAI | LLMs, RAG, Vector Databases, MCP, Prompt Engineering |
+| Tools & cloud | Git, GitHub, Docker, Microsoft Graph API, SharePoint, Cloudflare R2 |
+| Integrations | Razorpay |
+
+## Featured project
+
+### [OmniDesk](https://github.com/Naveenkumar75/omnidesk) · Go · PostgreSQL · pgvector · FastAPI · MCP
+[![CI](https://github.com/Naveenkumar75/omnidesk/actions/workflows/ci.yml/badge.svg)](https://github.com/Naveenkumar75/omnidesk/actions/workflows/ci.yml)
+
+Multi-tenant customer-support backend.
+
+- **Tenant isolation in two layers:** every query is scoped by the tenant in the JWT, and composite foreign keys make the database reject cross-tenant references.
+- **Tickets:** state machine with row locks and an audit trail, assignment, replies and internal notes, admin/agent roles.
+- **SLA worker** built on `FOR UPDATE SKIP LOCKED`, safe across replicas; each breach is recorded exactly once.
+- **AI layer:** RAG reply suggestions over pgvector, a retrieval evaluation that gates CI, and an MCP server that acts with the caller's own token.
+- **Production basics:** rate-limited login, versioned migrations, structured logging, OpenAPI spec, integration tests against PostgreSQL in CI.
+
+**Next:** semantic embeddings with hybrid (vector + full-text) search, measured against the current baseline.
+
+## Focus areas
+
+- Backend engineering with Java/Spring Boot, Python (FastAPI, Django) and Go
+- Production-minded design: auth, transactions, tenant data isolation, concurrency, CI
+- Shipping LLM features: retrieval, evaluation, tool use and MCP servers
+- Data structures and algorithms in Java
 
 ---
 
-**Work with:** Go · Java / Spring Boot · Python / FastAPI / Django · TypeScript / Angular · PostgreSQL · Docker · GitHub Actions · LLM APIs, RAG, pgvector, MCP
-
-Open to Software Engineer and AI Engineer roles at product companies.
+📫 Open to Software Engineer and AI Engineer opportunities at product-based companies.
